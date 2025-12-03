@@ -37,10 +37,12 @@ const vue_app = Vue.createApp({
          siteTitle: "Shagan's Top 8 Movies for Kids",
          owner: "Shagan Sangha",
          repositoryLink: "https://github.com/Shagan742/NJIT-Project-2-Movie-Poster-Gallery"
+         
       }
     },
       methods: {
             /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
+            
       }
 })
 
