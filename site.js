@@ -82,9 +82,10 @@ const vue_app = Vue.createApp({
                               break;
                   }
                   return `${dateArray[1]} ${dateArray[2]}, ${dateArray[0]}`
-            },
+            }
+            ,
             posterClick: function(index) {
-                  for(let i=0; i<index.length; i++) {
+                  for(let i=0; i<movie.posters.length; i++) {
                         index++;
                   }
             }
