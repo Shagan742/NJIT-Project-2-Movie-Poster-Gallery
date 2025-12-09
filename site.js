@@ -33,7 +33,7 @@ const vue_app = Vue.createApp({
             // This holds your movies.json data.
             movies: [],
             /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
-         siteTitle: "Shagan's Top 8 Movies for Kids",
+         siteTitle: "IMDB + Shagan's Top 8 Movies",
          owner: "Shagan Sangha",
          repositoryLink: "https://github.com/Shagan742/NJIT-Project-2-Movie-Poster-Gallery"
          
