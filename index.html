@@ -31,12 +31,12 @@
 
 	    <div class="main">
 
-	      <div class="row">
+	      <div class="row justify-content-center">
 
-	        <div class="col-md-6" v-for="(movie, index) in movies">
+	        <div class="col-md-3 m-1 col-sm-12" v-for="(movie, index) in movies">
 	            <div class="thumbnail">
 
-						<img @click="posterClick(index)" :src="movie.posters[movie.posterindex]" class="poster img-fluid"/>
+						<img @click="posterClick(index)" :src="movie.posters[movie.posterindex]" class="poster img-fluid" style="align-self: center;"/>
 						<div class="imageInfo">Poster {{this.movies[index].posterindex+1}} of {{this.movies[index].posters.length}}</div>
 
 						<p class="title">{{movie.title}} ({{movie.country}})</p>
@@ -44,7 +44,7 @@
 						<p class="runtime">Runtime: {{timeText(movie.runtime)}}</p>
 						<p class="released">Released: {{getMonthText(movie.released)}} | Rated: {{movie.rating}}</p>
 						<p class="websites">Websites: <a :href="movie.imdb"> IMDB </a> | <a :href="movie.website">Official</a></p>
-
+<br>
 			            <div class="social">
 			              <p class="likes" @click="movie.likes++"><i class="bi bi-hand-thumbs-up" aria-hidden="true"></i> {{movie.likes}}</p>
 			              <p class="dislikes" @click="movie.dislikes++"><i class="bi bi-hand-thumbs-down"></i> {{movie.dislikes}}</p>
