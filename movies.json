@@ -68,5 +68,47 @@
             "likes": 812,
             "dislikes": 101,
             "posterindex": 0
+      },
+      {
+            "title": "Vivarium",
+            "iscore": 5.9,
+            "rating": "R",
+            "runtime": 137,
+            "released": [2019, 9, 19],
+            "country": "USA",
+            "posters": ["img/vivarium1.png", "img/vivarium2.png", "img/vivarium3.png"],
+            "imdb": "https://www.imdb.com/title/tt8368406/",
+            "website": "https://www.netflix.com/title/80203870",
+            "likes": 579,
+            "dislikes": 408,
+            "posterindex": 0
+      },
+      {
+            "title": "Margin Call",
+            "iscore": 8.9,
+            "rating": "R",
+            "runtime": 195,
+            "released": [1993, 11, 30],
+            "country": "USA",
+            "posters": ["img/margincall1.png", "img/margincall2.png"],
+            "imdb": "https://www.imdb.com/title/tt1615147/?ref_=tturv_ov_i",
+            "website": "https://www.justwatch.com/us/movie/margin-call",
+            "likes": 697,
+            "dislikes": 508,
+            "posterindex": 0
+      },
+      {
+            "title": "Fall",
+            "iscore": 6.4,
+            "rating": "PG-13",
+            "runtime": 147,
+            "released": [2022, 8, 12],
+            "country": "USA",
+            "posters": ["img/fall1.png", "img/fall2.webp"],
+            "imdb": "https://www.imdb.com/title/tt15325794/",
+            "website": "https://www.lionsgate.com/movies/fall",
+            "likes": 298,
+            "dislikes": 204,
+            "posterindex": 0
       }
 ]
