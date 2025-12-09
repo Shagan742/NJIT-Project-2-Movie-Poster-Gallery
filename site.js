@@ -85,7 +85,7 @@ const vue_app = Vue.createApp({
             }
             ,
             posterClick: function(index) {
-                  if(this.movies[index].posterindex<this.movies[index].posters.length) {
+                  if(this.movies[index].posterindex<this.movies[index].posters.length-1) {
                   this.movies[index].posterindex++;
             } else {
                         this.movies[index].posterindex=0;
