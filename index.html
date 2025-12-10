@@ -12,40 +12,39 @@
 	<link rel="stylesheet" type='text/css' href="style.css"/>
 	  
 	<!-- DO NOT CHANGE ANYTHING ABOVE THIS LINE-->
-
+<link rel="stylesheet" href="https://use.typekit.net/ecx8aos.css">
 	<!-- Javascript Framework (e.g., vue.js) (ADD HERE) -->
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
 </head>
-
   <body>
 	<div id="vue_app" class="container">
 
 	    <div class="header">
 
-	      <div class="container">
-	        <h1 id="app_title" >{{siteTitle}}</h1>
+	      <div class="container mt-5 text-center">
+	        <h1 id="app_title" class="mx-5" style="font-size:70px;">{{siteTitle}}</h1>
 	      </div>
 
 	    </div>
 
 	    <div class="main">
 
-	      <div class="row justify-content-center">
+	      <div class="row justify-content-center mx-3">
 
-	        <div class="col-md-3 m-1 col-sm-12" v-for="(movie, index) in movies">
-	            <div class="thumbnail">
-
-						<img @click="posterClick(index)" :src="movie.posters[movie.posterindex]" class="poster img-fluid" style="align-self: center;"/>
+	        <div class="col-md-5 col-sm-6 d-flex justify-content-center my-5" v-for="(movie, index) in movies">
+	            <div class="thumbnail" @click="posterClick(index)">
+					<div class="imgBorder"></div>
+						<img :src="movie.posters[movie.posterindex]" class="poster img-fluid"/>
+						
 						<div class="imageInfo">Poster {{this.movies[index].posterindex+1}} of {{this.movies[index].posters.length}}</div>
 
-						<p class="title">{{movie.title}} ({{movie.country}})</p>
+						<p class="title mt-3">{{movie.title}} ({{movie.country}})</p>
 						<p class="score"><i class="bi bi-star" aria-hidden="true"></i> {{movie.iscore}} </p>
 						<p class="runtime">Runtime: {{timeText(movie.runtime)}}</p>
-						<p class="released">Released: {{getMonthText(movie.released)}} | Rated: {{movie.rating}}</p>
+						<p class="released">Released: {{getMonthText(movie.released)}} <br> Rated: {{movie.rating}}</p>
 						<p class="websites">Websites: <a :href="movie.imdb"> IMDB </a> | <a :href="movie.website">Official</a></p>
-<br>
-			            <div class="social">
+			            <div class="social my-4">
 			              <p class="likes" @click="movie.likes++"><i class="bi bi-hand-thumbs-up" aria-hidden="true"></i> {{movie.likes}}</p>
 			              <p class="dislikes" @click="movie.dislikes++"><i class="bi bi-hand-thumbs-down"></i> {{movie.dislikes}}</p>
 			            </div>
