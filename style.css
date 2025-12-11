@@ -63,6 +63,8 @@ letter-spacing:0.05em;
     width:200px;
     height:300px;
     width:auto;
+    position:relative;
+    z-index:2;
 }
 
 .imgBorder {
@@ -74,7 +76,7 @@ letter-spacing:0.05em;
     height:695px; 
     bottom:-35px;
     position:absolute;
-    z-index:4;
+    z-index:2;
 }
 
 /* This stylizes your "Poster X of Y" text */
@@ -103,6 +105,8 @@ letter-spacing:0.05em;
 
 .websites, a, .runtime {
     color:white;
+    position:relative;
+    z-index:2;
 }
 
 /* This shapes your IMDB score area */
@@ -124,6 +128,7 @@ letter-spacing:0.05em;
     right: 20px;
     border-radius:50%;
     transform:rotate(20deg);
+    z-index:2;
 }
 
 /* This contains your like and dislike buttons */
@@ -169,6 +174,8 @@ letter-spacing:0.05em;
 .likes {
     background-color:#2a7d2a;
     color:#ffffff;
+    position:relative;
+    z-index:2;
 }
 
 .likes:hover {
@@ -178,6 +185,8 @@ letter-spacing:0.05em;
 .dislikes {
     background-color:#f65a5b;
     color:#ffffff;
+    position:relative;
+    z-index:2;
 }
 
 .dislikes:hover {
